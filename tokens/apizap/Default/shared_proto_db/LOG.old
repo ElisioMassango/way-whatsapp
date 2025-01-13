@@ -1,0 +1,4 @@
+2025/01/14-00:33:39.509 3f2c Creating DB D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db since it was missing.
+2025/01/14-00:33:39.517 3f2c Reusing MANIFEST D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db/MANIFEST-000001
+2025/01/14-00:33:39.518 3f2c Recovering log #3
+2025/01/14-00:33:39.519 3f2c Reusing old log D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db/000003.log 
