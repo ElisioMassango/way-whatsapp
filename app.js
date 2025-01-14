@@ -3,9 +3,12 @@ const venom = require("venom-bot");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const helmet = require("helmet");
-
+const QRCode = require("qrcode"); // Para geração de QR Codes
+const fs = require("fs");
+const path = require("path");
 const app = express();
-const port = 3000;
+
+const port = 4000;
 const JWT_SECRET = "your-secret-key"; // Substitua por uma chave secreta forte
 
 // Middleware
@@ -53,7 +56,9 @@ const start = (client) => {
     const { to, message } = req.body;
 
     if (!to || !message) {
-      return res.status(400).json({ error: "Campos 'to' e 'message' são obrigatórios" });
+      return res
+        .status(400)
+        .json({ error: "Campos 'to' e 'message' são obrigatórios" });
     }
 
     try {
@@ -70,12 +75,29 @@ const start = (client) => {
     const { to, imageUrl, caption } = req.body;
 
     if (!to || !imageUrl) {
-      return res.status(400).json({ error: "Campos 'to' e 'imageUrl' são obrigatórios" });
+      return res
+        .status(400)
+        .json({ error: "Campos 'to' e 'imageUrl' são obrigatórios" });
     }
 
+    // Gerar o QR Code
+    const fileName = `qrcode-${Date.now()}.png`;
+    const filePath = path.resolve(__dirname, fileName);
+
     try {
-      await client.sendImage(`${to}@c.us`, imageUrl, "image", caption || "");
+      await QRCode.toFile(filePath,imageUrl);
+
+      await client.sendImage(`${to}@c.us`, filePath, fileName, caption || "");
+
+      // Apagar o arquivo após o envio
+      fs.unlink(filePath, (err) => {
+        if (err) {
+          console.error("Erro ao excluir o arquivo:", err);
+        }
+      });
+
       res.json({ success: true, message: "Imagem enviada com sucesso" });
+
     } catch (error) {
       console.error("Erro ao enviar imagem:", error);
       res.status(500).json({ error: "Falha ao enviar imagem" });
