@@ -84,8 +84,16 @@ const start = (client) => {
     const fileName = `qrcode-${Date.now()}.png`;
     const filePath = path.resolve(__dirname, fileName);
 
+    const options = {
+      errorCorrectionLevel: "H", // High error correction level
+      type: "png",
+      quality: 1, // Highest quality for PNG
+      margin: 1, // Minimal margin
+      scale: 10, // High resolution
+    };
+
     try {
-      await QRCode.toFile(filePath,imageUrl);
+      await QRCode.toFile(filePath,imageUrl,options);
 
       await client.sendImage(`${to}@c.us`, filePath, fileName, caption || "");
 
