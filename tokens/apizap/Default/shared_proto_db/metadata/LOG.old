@@ -1,4 +1,3 @@
-2025/01/14-00:33:39.465 3f2c Creating DB D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db\metadata since it was missing.
-2025/01/14-00:33:39.501 3f2c Reusing MANIFEST D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db\metadata/MANIFEST-000001
-2025/01/14-00:33:39.503 3f2c Recovering log #3
-2025/01/14-00:33:39.505 3f2c Reusing old log D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db\metadata/000003.log 
+2025/01/14-00:37:40.295 4278 Reusing MANIFEST D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db\metadata/MANIFEST-000001
+2025/01/14-00:37:40.296 4278 Recovering log #3
+2025/01/14-00:37:40.296 4278 Reusing old log D:\MERNAPPS\way-api\tokens\apizap\Default\shared_proto_db\metadata/000003.log 

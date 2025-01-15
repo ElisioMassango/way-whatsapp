@@ -1,4 +1,3 @@
-2025/01/14-00:33:44.356 3f2c Creating DB D:\MERNAPPS\way-api\tokens\apizap\Default\Session Storage since it was missing.
-2025/01/14-00:33:44.374 3f2c Reusing MANIFEST D:\MERNAPPS\way-api\tokens\apizap\Default\Session Storage/MANIFEST-000001
-2025/01/14-00:33:44.376 3f2c Recovering log #3
-2025/01/14-00:33:44.378 3f2c Reusing old log D:\MERNAPPS\way-api\tokens\apizap\Default\Session Storage/000003.log 
+2025/01/14-00:37:41.822 464c Reusing MANIFEST D:\MERNAPPS\way-api\tokens\apizap\Default\Session Storage/MANIFEST-000001
+2025/01/14-00:37:41.825 464c Recovering log #3
+2025/01/14-00:37:41.826 464c Reusing old log D:\MERNAPPS\way-api\tokens\apizap\Default\Session Storage/000003.log 
