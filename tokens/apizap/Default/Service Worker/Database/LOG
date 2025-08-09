@@ -1,3 +1,4 @@
-2025/01/15-01:45:44.203 b10 Reusing MANIFEST D:\MERNAPPS\way-whatsapp\tokens\apizap\Default\Service Worker\Database/MANIFEST-000001
-2025/01/15-01:45:44.205 b10 Recovering log #3
-2025/01/15-01:45:44.224 b10 Reusing old log D:\MERNAPPS\way-whatsapp\tokens\apizap\Default\Service Worker\Database/000003.log 
+2025/08/09-21:24:25.828 80e4 Creating DB D:\MERNAPPS\way-whatsapp\tokens\apizap\Default\Service Worker\Database since it was missing.
+2025/08/09-21:24:25.868 80e4 Reusing MANIFEST D:\MERNAPPS\way-whatsapp\tokens\apizap\Default\Service Worker\Database/MANIFEST-000001
+2025/08/09-21:24:25.869 80e4 Recovering log #3
+2025/08/09-21:24:25.870 80e4 Reusing old log D:\MERNAPPS\way-whatsapp\tokens\apizap\Default\Service Worker\Database/000003.log 

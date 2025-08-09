@@ -44,6 +44,8 @@ const authenticateToken = (req, res, next) => {
 venom
   .create({
     session: "apizap",
+     headless: true, // Open browser for debugging
+    useChrome: true, // Use Chrome browser
   })
   .then((client) => start(client))
   .catch((err) => {
